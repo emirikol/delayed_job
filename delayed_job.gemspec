@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.files         += Dir.glob('{contrib,lib,recipes,spec}/**/*')
   spec.homepage       = 'http://github.com/collectiveidea/delayed_job'
   spec.licenses       = ['MIT']
-  spec.name           = 'delayed_job'
+  spec.name           = 'iplan-delayed_job'
   spec.require_paths  = ['lib']
   spec.summary        = 'Database-backed asynchronous priority queue system -- Extracted from Shopify'
   spec.test_files     = Dir.glob('spec/**/*')
