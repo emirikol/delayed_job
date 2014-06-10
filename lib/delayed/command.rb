@@ -65,7 +65,7 @@ module Delayed
         opts.on('--no-wait', "Avoid killing the process if a current job is long run") do
           @no_wait = true
         end
-        opts.on('--kill-waitime', "Amount of time to wait to kill the process after sending the stop command") do |n|
+        opts.on('--kill-waitime=n', "Amount of seconds to wait to kill the process after sending the stop command") do |n|
           @options[:force_kill_waittime] = n.to_i
         end
         opts.on('--exit-on-complete', "Exit when no more jobs are available to run. This will exit if all jobs are scheduled to run in the future.") do
